@@ -23,7 +23,8 @@ namespace CurrencyWallet
 
 		}
 
-		event System.Action<uint> onBalanceChange;
+		[System.NonSerialized]
+		System.Action<uint> onBalanceChange;
 
 
 		public SimpleCurrency(string name)
